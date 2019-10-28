@@ -12,7 +12,7 @@ const forecast = (latitude, longitude, callback) => {
         } else {
             callback(undefined, 
                 //{
-                'temperature: ' + body.currently.temperature + '. There is a ' + body.currently.precipProbability + '% changce of rain'
+                body.daily.data[0].summary + ' temperature: ' + body.currently.temperature + '. There is a ' + body.currently.precipProbability + '% changce of rain'
                 //temperature: response.body.currently.temperature,
                 //precipProbability: response.body.currently.precipProbability,
                 //timezone: response.body.timezone
